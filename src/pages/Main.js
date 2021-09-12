@@ -2,11 +2,10 @@ import React, { useEffect, useState, useContext } from "react";
 import Movie from "../components/Movie";
 import { AuthContext } from "../context/AuthContext";
 
-const FEATURED_API =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
-// const IMG_API = "https://image.tmdb.org/t/p/w1280";
-const SEARCH_API =
-  "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=";
+const FEATURED_MOVIES =
+ "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=" + process.env.REACT_APP_MOVIEDB_APIKEY + "&page=1";
+const IMG_API = "https://image.tmdb.org/t/p/w1280";
+const SEARCH_MOVIES ="https://api.themoviedb.org/3/search/movie?&api_key=" + process.env.REACT_APP_MOVIEDB_APIKEY + "&query=";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -14,8 +13,9 @@ function App() {
   const { currentUser } = useContext(AuthContext);
 
   useEffect(() => {
-    getMovies(FEATURED_API);
-    //console.log("API_KEY: ", process.env.REACT_APP_API_KEY);
+    getMovies(FEATURED_MOVIES);
+    //console.log("API_KEY_firebase: ", process.env.REACT_APP_API_KEY);
+    //console.log("API_KEY_mov: ", process.env.REACT_APP_MOVIEDB_APIKEY);
   }, []);
 
   const getMovies = (API) => {
@@ -34,7 +34,7 @@ function App() {
     e.preventDefault();
 
     if (searchTerm && currentUser) {
-      getMovies(SEARCH_API + searchTerm);
+      getMovies(SEARCH_MOVIES + searchTerm);
       setSearchTerm("");
     } else {
       alert("Please login to search a movie!");
