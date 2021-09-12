@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Project015_MovieApp-React-FirebaseAuth/static/css/main.d0a157ec.chunk.css",
+    "main.js": "/Project015_MovieApp-React-FirebaseAuth/static/js/main.8dd4f034.chunk.js",
+    "main.js.map": "/Project015_MovieApp-React-FirebaseAuth/static/js/main.8dd4f034.chunk.js.map",
+    "runtime-main.js": "/Project015_MovieApp-React-FirebaseAuth/static/js/runtime-main.c9ec919c.js",
+    "runtime-main.js.map": "/Project015_MovieApp-React-FirebaseAuth/static/js/runtime-main.c9ec919c.js.map",
+    "static/js/2.af102c6c.chunk.js": "/Project015_MovieApp-React-FirebaseAuth/static/js/2.af102c6c.chunk.js",
+    "static/js/2.af102c6c.chunk.js.map": "/Project015_MovieApp-React-FirebaseAuth/static/js/2.af102c6c.chunk.js.map",
+    "index.html": "/Project015_MovieApp-React-FirebaseAuth/index.html",
+    "static/css/main.d0a157ec.chunk.css.map": "/Project015_MovieApp-React-FirebaseAuth/static/css/main.d0a157ec.chunk.css.map",
+    "static/js/2.af102c6c.chunk.js.LICENSE.txt": "/Project015_MovieApp-React-FirebaseAuth/static/js/2.af102c6c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9ec919c.js",
+    "static/js/2.af102c6c.chunk.js",
+    "static/css/main.d0a157ec.chunk.css",
+    "static/js/main.8dd4f034.chunk.js"
+  ]
+}
